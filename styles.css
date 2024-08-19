@@ -22,3 +22,31 @@
   text-align: center;
   color: black;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap 1rem;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+    gap 10rem;
+}
+.card {
+
+   object-fit: contain;
+
+}
+        
+#gallery {
+    margin:auto;
+    text-align: center;
+}
+
+.footer-center {
+    margin: auto;
+    text-align: center;
+}    

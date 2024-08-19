@@ -29,7 +29,7 @@
     gap 1rem;
 }
 
-.gallery1 {
+.team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 5rem;
@@ -41,12 +41,25 @@
 
 }
         
-#gallery {
+
+.sailboats {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     margin:auto;
     text-align: center;
+    gap:1rem;
+}
+article {
+    display:flex;
+    flex-direction: column;
 }
 
 .footer-center {
     margin: auto;
     text-align: center;
 }    
+
+location {
+    display:flex;
+    flex-direction: column;
+}

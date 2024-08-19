@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Single Page Website</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
   <body>
     <!-- top bar -->
@@ -16,47 +17,55 @@
     <!-- Team -->
     <!-- End Nav Bar -->
     <!-- End Top Bar -->
-    <header id="top">
-      <di>
-        <h1>  Dear Sailboat</h1>
-            <nav>
-                <ul>
-                    <li><a href="#Location">Location</a></li>
-                    <li><a href="#Gallery">Gallery</a></li>
-                    <li><a href="#Discoversailboats">Sailboats</a></li>
-                    <li><a href="#Team">Team</a></li>
-                </ul>
-            </nav>
-    </di>           
+    <navbar id="top" class="navbar">
+        
+            <div class="siteName">
+                <h1>  Dear Sailboat</h1>
+            </div>  
+
+            <div >
+                <nav class="nav">
+                    <a href="#Location">Location</a>
+                    <a href="#Gallery">Gallery</a>
+                    <a href="#Discoversailboats">Sailboats</a>
+                    <a href="#Team">Team</a>
+                </nav>
+            </div>           
+  </navbar>
 
 
-    <div>
+    <header>
+      
       <!-- Splash Screen -->
-      <h1>Dear Sailboat: Local Sailing Shop</h1>
-      <h1>We service all sailboats</h1>
-      <a href="#discoversailboats">Discover our Sailboats</a>
-      <img src="./images/main-splash-image.jpg" alt="sailboat picture" />
-      <!-- Heading 1 -- />
-      <!-- Heading 2 -- >
+
+      <img src="./images/main-splash-image.jpg" alt="sailboat picture" class=backgroundFoto>
+        <div class="ontopofphoto">
+            <h1>Dear Sailboat: Local Sailing Shop</h1>
+            <h3>We service all sailboats</h3>
+            <a href="#Discoversailboats">Discover our Sailboats</a>
+        </div>
+
+      <!-- Heading 1 -->
+      <!-- Heading 2 -->
       <!-- Button -->
       <!-- End Splash Screen -->
-    </div>
-
     </header>
+
+
     
     <main>
 
-        <section id="Location">
+        <section id="Location" class="backgroundFoto">
             <h1 >Best Sailboat location</h1>
             <a href="#top">Top</a>
-            <iframe>
+            <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11980.170281264933!2d2.1650192865844726!3d41.35142842221939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1724058273812!5m2!1sen!2ses"
         width="600"
         height="450"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerpolicy="no-referrer-when-downgrade">
            </iframe>
       <p>
         Starting from Mariner's Bay Lighthouse: Head West on Lighthouse Road

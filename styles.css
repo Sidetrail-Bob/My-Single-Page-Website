@@ -2,57 +2,52 @@ body {
   margin: 0;
 }
 
-img {
-    width 100%;
+/* img {
+  width: 100%;
+} */
+
+p {
+  text-align: justify;
+  margin: 15px;
 }
 
-p {    
-    text-align: justify;
-    margin: 15px;
-}
-
-.center{
-    text-align: center;
-    margin-bottom: 20px;
+.center {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding:20px;
+  padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:large;
-  font-weight:300
-
+  font-size: large;
+  font-weight: 300;
 }
 
 .nav {
   /* align-items: center; */
   padding-inline: 20px;
-  
 }
 
-
-.hrefFormat{
-    display: inline-block;
-    margin-bottom: 20px;
+.hrefFormat {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .ontopofphoto {
   display: flex;
-  height:100vh;
+  height: 100vh;
   background-attachment: fixed;
   background-image: url("./images/main-splash-image.jpg");
   background-position: right;
   background-size: cover;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   text-align: center;
 
   color: black;
 }
-
-
 
 .gallery {
   display: grid;
@@ -63,10 +58,10 @@ p {
   object-position: center;
 }
 .card {
-    width:100%;
-    height:100%;
-    margin 10px;
-    }
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
 
 .team {
   display: grid;
@@ -76,9 +71,9 @@ p {
   gap: 1rem;
 }
 .card {
-  width:100%;
-  height:100%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
 .sailboats {
   display: grid;
@@ -87,10 +82,6 @@ p {
   margin-top: 10px;
   gap: 1rem;
 }
-/*article {
-  display: flex;
-  flex-direction: column;
-} */
 
 footer p {
   margin: auto;
@@ -100,4 +91,59 @@ footer p {
 location {
   display: flex;
   flex-direction: column;
+}
+@media all and (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .navbar {
+    padding: 10px;
+    font-size: medium;
+  }
+}
+@media all and (max-width: 650px) {
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+    margin: 10px;
+    gap: 1rem;
+  }
+  .ontopofphoto {
+    height: 80vh;
+
+    color: black;
+  }
+}
+@media all and (min-width: 400px) and (max-width: 550px) {
+  .navbar {
+    padding: 10px;
+    font-size: medium;
+  }
+  .ontopofphoto {
+    height: 70vh;
+    color: black;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+    margin: 10px;
+  }
+
+  .sailboats {
+    grid-template-columns: 1fr;
+    margin: 5px;
+    margin-top: 5;
+  }
+  .card {
+    width: 80%;
+    height: 80%;
+    margin: 5px;
+  }
 }

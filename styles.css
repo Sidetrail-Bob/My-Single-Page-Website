@@ -24,42 +24,39 @@
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .team {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 5rem;
-    gap 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5rem;
+  gap: 5rem;
 }
 .card {
-
-   object-fit: contain;
-
+  object-fit: contain;
 }
-        
 
 .sailboats {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    margin:auto;
-    text-align: center;
-    gap:1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  text-align: center;
+  gap: 1rem;
 }
 article {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-center {
-    margin: auto;
-    text-align: center;
-}    
+  margin: auto;
+  text-align: center;
+}
 
 location {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

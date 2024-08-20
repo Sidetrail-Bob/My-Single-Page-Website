@@ -13,8 +13,8 @@ p {
 
 .center{
     text-align: center;
+    margin-bottom: 20px;
 }
-
 
 .navbar {
   display: flex;
@@ -25,37 +25,41 @@ p {
   font-weight:300
 
 }
-/*  does this even do anything now? */
+
 .nav {
   /* align-items: center; */
   padding-inline: 20px;
   
-  
-
 }
-/*  doesn't look like I need this
-.backgroundFoto {
 
-  display: flex;
-  background-position: center;
-  background-size: 90;
-  height: 100%;
-  width: 100%;
-}  */
+
+.hrefFormat{
+    margin-bottom: 20px;
+}
 
 .ontopofphoto {
+  display: flex;
+  height:100vh;
+  background-attachment: fixed;
   background-image: url("./images/main-splash-image.jpg");
-  background-size: 100vh;
+  background-position: right;
+  background-size: cover;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   text-align: center;
+
   color: black;
 }
 
+
+
 .gallery {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .team {
